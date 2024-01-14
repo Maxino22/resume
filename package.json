@@ -1,0 +1,30 @@
+{
+	"name": "@maxino/resume",
+	"private": true,
+	"scripts": {
+		"dev": "concurrently \"npx grunt watch\" \"node ./serve.js ./resume.json\"",
+		"build": "grunt less && node ./build.js"
+	},
+	"dependencies": {
+		"gravatar": "^1.8.2",
+		"handlebars": "^4.7.7",
+		"moment": "^2.29.4",
+		"optimist": "^0.5.2",
+		"resume-schema": "1.0.0",
+		"tarball-extract": "^0.0.3",
+		"underscore": "^1.13.4"
+	},
+	"devDependencies": {
+		"axios": "^0.27.2",
+		"concurrently": "^7.3.0",
+		"fs-extra": "^10.1.0",
+		"grunt": "^1.5.3",
+		"grunt-cli": "^1.4.3",
+		"grunt-contrib-less": "^3.0.0",
+		"grunt-contrib-watch": "^1.1.0",
+		"grunt-exec": "^3.0.0",
+		"less": "^4.1.3",
+		"puppeteer": "^15.5.0",
+		"underscore.string": "^3.3.6"
+	}
+}
