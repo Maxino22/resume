@@ -320,6 +320,8 @@ a:focus {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 2fr 4fr;
-    page-break-after: always;
+  }
+  .card-nested {
+    page-break-inside: avoid;
   }
 }
